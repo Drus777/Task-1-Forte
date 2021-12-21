@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  ThirdVC.swift
 //  Task #1 Forte
 //
-//  Created by Andrey on 14.12.21.
+//  Created by Andrey on 20.12.21.
 //
 
 import UIKit
 
-class MainVC: UIViewController {
+final class ThirdVC: UIViewController {
   
   var model: MainModelProtocol?
   
@@ -23,24 +23,18 @@ class MainVC: UIViewController {
     super.viewDidLoad()
     model?.fillView()
   }
-  
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    navigationController?.navigationBar.isHidden = true
-  }
 }
 
-extension MainVC: MainViewDelegate {
+extension ThirdVC: MainViewDelegate {
   func didTapContinueButton() {
-    let nextVC = ModuleBuilder.createSecondModul()
+    let nextVC = ModuleBuilder.createFourthModul()
     navigationController?.pushViewController(nextVC, animated: true)
   }
 }
 
-extension MainVC: MainViewProtocol {
+extension ThirdVC: MainViewProtocol {
   func fillData() {
     guard let model = model else { return }
     currentView?.fill(by: model.dataModel)
   }
 }
-
