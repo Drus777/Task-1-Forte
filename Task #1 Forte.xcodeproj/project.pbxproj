@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		781489222770871E00A7C763 /* Task__1_ForteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781489212770871E00A7C763 /* Task__1_ForteTests.swift */; };
+		7814892B2770881C00A7C763 /* MainModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814892A2770881C00A7C763 /* MainModelTest.swift */; };
+		7819272F2768CA9C00E803A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819272E2768CA9C00E803A7 /* AppDelegate.swift */; };
+		781927312768CA9C00E803A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781927302768CA9C00E803A7 /* SceneDelegate.swift */; };
+		781927332768CA9C00E803A7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781927322768CA9C00E803A7 /* MainVC.swift */; };
+		781927382768CAA000E803A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781927372768CAA000E803A7 /* Assets.xcassets */; };
+		7819273B2768CAA000E803A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781927392768CAA000E803A7 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		781489242770871E00A7C763 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 781927232768CA9C00E803A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7819272A2768CA9C00E803A7;
+			remoteInfo = "Task #1 Forte";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7814891F2770871E00A7C763 /* Task #1 ForteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Task #1 ForteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		781489212770871E00A7C763 /* Task__1_ForteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task__1_ForteTests.swift; sourceTree = "<group>"; };
+		781489232770871E00A7C763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7814892A2770881C00A7C763 /* MainModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModelTest.swift; sourceTree = "<group>"; };
+		7819272B2768CA9C00E803A7 /* Task #1 Forte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task #1 Forte.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7819272E2768CA9C00E803A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		781927302768CA9C00E803A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		781927322768CA9C00E803A7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		781927372768CAA000E803A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7819273A2768CAA000E803A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7819273C2768CAA000E803A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7814891C2770871E00A7C763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		781927282768CA9C00E803A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		781489202770871E00A7C763 /* Task #1 ForteTests */ = {
+			isa = PBXGroup;
+			children = (
+				78148929277087AD00A7C763 /* TestMainModule */,
+				781489212770871E00A7C763 /* Task__1_ForteTests.swift */,
+				781489232770871E00A7C763 /* Info.plist */,
+			);
+			path = "Task #1 ForteTests";
+			sourceTree = "<group>";
+		};
+		78148929277087AD00A7C763 /* TestMainModule */ = {
+			isa = PBXGroup;
+			children = (
+				7814892A2770881C00A7C763 /* MainModelTest.swift */,
+			);
+			path = TestMainModule;
+			sourceTree = "<group>";
+		};
+		781927222768CA9C00E803A7 = {
+			isa = PBXGroup;
+			children = (
+				7819272D2768CA9C00E803A7 /* Task #1 Forte */,
+				781489202770871E00A7C763 /* Task #1 ForteTests */,
+				7819272C2768CA9C00E803A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7819272C2768CA9C00E803A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7819272B2768CA9C00E803A7 /* Task #1 Forte.app */,
+				7814891F2770871E00A7C763 /* Task #1 ForteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7819272D2768CA9C00E803A7 /* Task #1 Forte */ = {
+			isa = PBXGroup;
+			children = (
+				781927422768CAAE00E803A7 /* App */,
+				781927462768CD0900E803A7 /* Resource */,
+				781927432768CAB800E803A7 /* Controllers */,
+				781927392768CAA000E803A7 /* LaunchScreen.storyboard */,
+				7819273C2768CAA000E803A7 /* Info.plist */,
+			);
+			path = "Task #1 Forte";
+			sourceTree = "<group>";
+		};
+		781927422768CAAE00E803A7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7819272E2768CA9C00E803A7 /* AppDelegate.swift */,
+				781927302768CA9C00E803A7 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		781927432768CAB800E803A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7819274B2768D0BB00E803A7 /* MainVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		781927462768CD0900E803A7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				781927372768CAA000E803A7 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7819274B2768D0BB00E803A7 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				781927322768CA9C00E803A7 /* MainVC.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7814891E2770871E00A7C763 /* Task #1 ForteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 781489262770871E00A7C763 /* Build configuration list for PBXNativeTarget "Task #1 ForteTests" */;
+			buildPhases = (
+				7814891B2770871E00A7C763 /* Sources */,
+				7814891C2770871E00A7C763 /* Frameworks */,
+				7814891D2770871E00A7C763 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				781489252770871E00A7C763 /* PBXTargetDependency */,
+			);
+			name = "Task #1 ForteTests";
+			productName = "Task #1 ForteTests";
+			productReference = 7814891F2770871E00A7C763 /* Task #1 ForteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7819272A2768CA9C00E803A7 /* Task #1 Forte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7819273F2768CAA000E803A7 /* Build configuration list for PBXNativeTarget "Task #1 Forte" */;
+			buildPhases = (
+				781927272768CA9C00E803A7 /* Sources */,
+				781927282768CA9C00E803A7 /* Frameworks */,
+				781927292768CA9C00E803A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Task #1 Forte";
+			productName = "Task #1 Forte";
+			productReference = 7819272B2768CA9C00E803A7 /* Task #1 Forte.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		781927232768CA9C00E803A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7814891E2770871E00A7C763 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 7819272A2768CA9C00E803A7;
+					};
+					7819272A2768CA9C00E803A7 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 781927262768CA9C00E803A7 /* Build configuration list for PBXProject "Task #1 Forte" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 781927222768CA9C00E803A7;
+			productRefGroup = 7819272C2768CA9C00E803A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7819272A2768CA9C00E803A7 /* Task #1 Forte */,
+				7814891E2770871E00A7C763 /* Task #1 ForteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7814891D2770871E00A7C763 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		781927292768CA9C00E803A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7819273B2768CAA000E803A7 /* LaunchScreen.storyboard in Resources */,
+				781927382768CAA000E803A7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7814891B2770871E00A7C763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7814892B2770881C00A7C763 /* MainModelTest.swift in Sources */,
+				781489222770871E00A7C763 /* Task__1_ForteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		781927272768CA9C00E803A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781927332768CA9C00E803A7 /* MainVC.swift in Sources */,
+				7819272F2768CA9C00E803A7 /* AppDelegate.swift in Sources */,
+				781927312768CA9C00E803A7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		781489252770871E00A7C763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7819272A2768CA9C00E803A7 /* Task #1 Forte */;
+			targetProxy = 781489242770871E00A7C763 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		781927392768CAA000E803A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7819273A2768CAA000E803A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		781489272770871E00A7C763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DMH7VXAKFF;
+				INFOPLIST_FILE = "Task #1 ForteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.Task--1-ForteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Task #1 Forte.app/Task #1 Forte";
+			};
+			name = Debug;
+		};
+		781489282770871E00A7C763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DMH7VXAKFF;
+				INFOPLIST_FILE = "Task #1 ForteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.Task--1-ForteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Task #1 Forte.app/Task #1 Forte";
+			};
+			name = Release;
+		};
+		7819273D2768CAA000E803A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7819273E2768CAA000E803A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		781927402768CAA000E803A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DMH7VXAKFF;
+				INFOPLIST_FILE = "Task #1 Forte/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.Task--1-Forte";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		781927412768CAA000E803A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DMH7VXAKFF;
+				INFOPLIST_FILE = "Task #1 Forte/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.Task--1-Forte";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		781489262770871E00A7C763 /* Build configuration list for PBXNativeTarget "Task #1 ForteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				781489272770871E00A7C763 /* Debug */,
+				781489282770871E00A7C763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		781927262768CA9C00E803A7 /* Build configuration list for PBXProject "Task #1 Forte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7819273D2768CAA000E803A7 /* Debug */,
+				7819273E2768CAA000E803A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7819273F2768CAA000E803A7 /* Build configuration list for PBXNativeTarget "Task #1 Forte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				781927402768CAA000E803A7 /* Debug */,
+				781927412768CAA000E803A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 781927232768CA9C00E803A7 /* Project object */;
+}
