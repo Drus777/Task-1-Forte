@@ -7,11 +7,15 @@
 
 import Foundation
 
+struct ComponentModel {
+  let textContent: String
+  let imageNames: String
+}
+
 struct DataModel {
   let titleLabel: String
-  let mainLabel: String?
+  let descriptionLabel: String?
   let infoLabel: String
-  let textContent: [String]
-  let imageNames: [String]
+  let featureViewData: [ComponentModel]
 }
 

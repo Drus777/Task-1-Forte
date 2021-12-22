@@ -7,13 +7,9 @@
 
 import UIKit
 
-protocol SecondViewDelegate: AnyObject {
-  func didTapNextButton()
-}
-
 final class SecondView: UIView {
   
-  weak var delegate: SecondViewDelegate?
+  weak var delegate: ViewDelegate?
   
   // MARK: - UI
   private lazy var headerImageView: UIImageView = {
@@ -84,10 +80,10 @@ final class SecondView: UIView {
     configureViews()
   }
   
-  convenience init(delegate: SecondViewDelegate) {
-    self.init(frame: .zero)
-    self.delegate = delegate
-  }
+//  convenience init(delegate: ViewDelegate) {
+//    self.init(frame: .zero)
+//    self.delegate = delegate
+//  }
   
   required init?(coder: NSCoder) {
     return nil
@@ -176,31 +172,33 @@ final class SecondView: UIView {
       infoLabel.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor, constant: -10)
     ])
   }
-  
-  //MARK: - Fillable
+
+  // MARK: - Actions
+  @objc private func didTapNextButton() {
+    delegate?.didTapButton()
+  }
+}
+
+//MARK: - Fillable
+extension SecondView: FillableProtocol {
   func fill(by model: DataModel) {
     titleLabel.text = model.titleLabel
-    mainLabel.text = model.mainLabel
+    mainLabel.text = model.descriptionLabel
     infoLabel.text = model.infoLabel
     
-    mainStackView.removeAll()
-    for i in 0..<model.imageNames.count {
+    mainStackView.removeAllSubviews()
+    for i in 0..<model.featureViewData.count {
       let view = HorizontalFeatureView()
       view.imageView.clipsToBounds = true
-      view.imageView.image = UIImage(systemName: model.imageNames[i])
+      view.imageView.image = UIImage(systemName: model.featureViewData[i].imageNames)
       view.imageView.tintColor = .white
       view.imageView.contentMode = .scaleAspectFit
       
-      view.label.text = model.textContent[i]
+      view.label.text = model.featureViewData[i].textContent
       view.label.textColor = .white
       view.label.font = UIFont.systemFont(ofSize: 21, weight: .medium)
       view.label.numberOfLines = .zero
       mainStackView.addArrangedSubview(view)
     }
-  }
-  
-  // MARK: - Actions
-  @objc private func didTapNextButton() {
-    delegate?.didTapNextButton()
   }
 }

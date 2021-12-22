@@ -7,13 +7,17 @@
 
 import UIKit
 
-protocol MainViewDelegate: AnyObject {
-  func didTapContinueButton()
+protocol FillableProtocol where Self: UIView {
+  func fill(by model: DataModel)
+}
+
+protocol ViewDelegate: AnyObject{
+  func didTapButton()
 }
 
 final class MainView: UIView {
   
-  weak var delegate: MainViewDelegate?
+  weak var delegate: ViewDelegate?
   
   // MARK: - UI
   private lazy var backgroundImageView: UIImageView = {
@@ -64,10 +68,10 @@ final class MainView: UIView {
     configureViews()
   }
   
-  convenience init(delegate: MainViewDelegate) {
-    self.init(frame: .zero)
-    self.delegate = delegate
-  }
+//  convenience init(delegate: ViewDelegate) {
+//    self.init(frame: .zero)
+//    self.delegate = delegate
+//  }
   
   required init?(coder: NSCoder) {
     return nil
@@ -136,33 +140,35 @@ final class MainView: UIView {
     ])
   }
   
-  //MARK: - Fillable
+  // MARK: - Actions
+  @objc private func didTapContinueButton() {
+    delegate?.didTapButton()
+  }
+}
+
+//MARK: - Fillable
+extension MainView: FillableProtocol {
   func fill(by model: DataModel) {
     titleLabel.text = model.titleLabel
     infoLabel.text = model.infoLabel
     
-    mainStackView.removeAll()
-    for i in 0..<model.imageNames.count {
+    mainStackView.removeAllSubviews()
+    for i in 0..<model.featureViewData.count {
       let view = HorizontalFeatureView()
       view.iconView.backgroundColor = .white
       view.iconView.layer.cornerRadius = view.iconViewSize / 2
       
       view.imageView.clipsToBounds = true
-      view.imageView.image = UIImage(systemName: model.imageNames[i])
+      view.imageView.image = UIImage(systemName: model.featureViewData[i].imageNames)
       view.imageView.tintColor = .systemGreen
       view.imageView.contentMode = .scaleAspectFit
       
-      view.label.text = model.textContent[i]
+      view.label.text = model.featureViewData[i].textContent
       view.label.textColor = .white
       view.label.font = UIFont.systemFont(ofSize: 21, weight: .medium)
       view.label.numberOfLines = .zero
       mainStackView.addArrangedSubview(view)
     }
-  }
-  
-  // MARK: - Actions
-  @objc private func didTapContinueButton() {
-    delegate?.didTapContinueButton()
   }
 }
 

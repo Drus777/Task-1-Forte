@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     guard let windowScene = (scene as? UIWindowScene) else { return }
     window = UIWindow(frame: windowScene.coordinateSpace.bounds)
     window?.windowScene = windowScene
-    let mainVC = ModuleBuilder.createMainModul()
+    let mainVC = VCFactory.createMenuVC()
     let navBar = UINavigationController(rootViewController: mainVC)
     window?.rootViewController = navBar
     window?.makeKeyAndVisible()
