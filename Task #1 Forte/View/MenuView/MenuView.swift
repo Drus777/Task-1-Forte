@@ -1,5 +1,5 @@
 //
-//  MainView.swift
+//  MenuView.swift
 //  Task #1 Forte
 //
 //  Created by Andrey on 14.12.21.
@@ -15,7 +15,7 @@ protocol ViewDelegate: AnyObject{
   func didTapButton()
 }
 
-final class MainView: UIView {
+final class MenuView: UIView {
   
   weak var delegate: ViewDelegate?
   
@@ -67,11 +67,6 @@ final class MainView: UIView {
     super.init(frame: frame)
     configureViews()
   }
-  
-//  convenience init(delegate: ViewDelegate) {
-//    self.init(frame: .zero)
-//    self.delegate = delegate
-//  }
   
   required init?(coder: NSCoder) {
     return nil
@@ -147,7 +142,7 @@ final class MainView: UIView {
 }
 
 //MARK: - Fillable
-extension MainView: FillableProtocol {
+extension MenuView: FillableProtocol {
   func fill(by model: DataModel) {
     titleLabel.text = model.titleLabel
     infoLabel.text = model.infoLabel

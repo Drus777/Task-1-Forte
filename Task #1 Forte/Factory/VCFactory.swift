@@ -26,9 +26,9 @@ final class VCFactory: Factory {
         ComponentModel(textContent: "Advertisements that match your interests", imageNames: "hand.point.up.braille.fill"),
         ComponentModel(textContent: "An improved personalized experience over time", imageNames: "wifi")
       ])
+    let view = MenuView()
     let model = MainModel(model: dataModel)
-    let view = MainView()
-    let menuVC = MenuVC(model: model, view: view)
+    let menuVC = BaseVC(model: model, view: view)
     view.delegate = menuVC
     return menuVC
   }
@@ -43,9 +43,9 @@ final class VCFactory: Factory {
         ComponentModel(textContent: "News of events happening near you", imageNames: "flag.fill"),
         ComponentModel(textContent: "Tagging and sharing your location", imageNames: "mappin")
       ])
-    let view = SecondView()
+    let view = ProfileView()
     let model = MainModel(model: dataModel)
-    let advertistingVC = MenuVC(model: model, view: view)
+    let advertistingVC = BaseVC(model: model, view: view)
     view.delegate = advertistingVC
     return advertistingVC
   }
@@ -60,9 +60,9 @@ final class VCFactory: Factory {
         ComponentModel(textContent: "News of events happening near you", imageNames: "flag.fill"),
         ComponentModel(textContent: "Tagging and sharing your location", imageNames: "mappin")
       ])
-    let view = MainView()
+    let view = MenuView()
     let model = MainModel(model: dataModel)
-    let registrationVC = MenuVC(model: model, view: view)
+    let registrationVC = BaseVC(model: model, view: view)
     view.delegate = registrationVC
     return registrationVC
   }
@@ -77,10 +77,10 @@ final class VCFactory: Factory {
         ComponentModel(textContent: "Advertisements that match your interests", imageNames: "hand.point.up.braille.fill"),
         ComponentModel(textContent: "An improved personalized experience over time", imageNames: "wifi")
       ])
-    let view = SecondView()
+    let view = ProfileView()
     let model = MainModel(model: dataModel)
-    let ProfileVC = MenuVC(model: model, view: view)
-    view.delegate = ProfileVC
-    return ProfileVC
+    let profileVC = BaseVC(model: model, view: view)
+    view.delegate = profileVC
+    return profileVC
   }
 }

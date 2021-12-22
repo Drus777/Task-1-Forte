@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MenuVC: UIViewController {
+class BaseVC: UIViewController {
   
   private var model: MainModelProtocol?
   private let currentView: FillableProtocol?
@@ -39,7 +39,7 @@ class MenuVC: UIViewController {
   }
 }
 
-extension MenuVC: ViewDelegate {
+extension BaseVC: ViewDelegate {
   func didTapButton() {
     let advertistingVC = VCFactory.createAdvertistingVC()
     let registrationVC = VCFactory.createRegistrationVC()

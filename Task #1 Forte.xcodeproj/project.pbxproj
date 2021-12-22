@@ -15,12 +15,12 @@
 		7814892B2770881C00A7C763 /* MainModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814892A2770881C00A7C763 /* MainModelTest.swift */; };
 		7819272F2768CA9C00E803A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819272E2768CA9C00E803A7 /* AppDelegate.swift */; };
 		781927312768CA9C00E803A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781927302768CA9C00E803A7 /* SceneDelegate.swift */; };
-		781927332768CA9C00E803A7 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781927322768CA9C00E803A7 /* MenuVC.swift */; };
+		781927332768CA9C00E803A7 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781927322768CA9C00E803A7 /* BaseVC.swift */; };
 		781927382768CAA000E803A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781927372768CAA000E803A7 /* Assets.xcassets */; };
 		7819273B2768CAA000E803A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781927392768CAA000E803A7 /* LaunchScreen.storyboard */; };
 		7819274A2768CD8B00E803A7 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781927492768CD8B00E803A7 /* DataModel.swift */; };
-		7819274E2768D0F400E803A7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819274D2768D0F400E803A7 /* MainView.swift */; };
-		78192762276A37F600E803A7 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78192761276A37F600E803A7 /* SecondView.swift */; };
+		7819274E2768D0F400E803A7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819274D2768D0F400E803A7 /* MenuView.swift */; };
+		78192762276A37F600E803A7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78192761276A37F600E803A7 /* ProfileView.swift */; };
 		78A25BB4276A551F00A68339 /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A25BB3276A551F00A68339 /* UIColor+Utils.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,14 +45,14 @@
 		7819272B2768CA9C00E803A7 /* Task #1 Forte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task #1 Forte.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7819272E2768CA9C00E803A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		781927302768CA9C00E803A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		781927322768CA9C00E803A7 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		781927322768CA9C00E803A7 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		781927372768CAA000E803A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7819273A2768CAA000E803A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7819273C2768CAA000E803A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		781927492768CD8B00E803A7 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		7819274D2768D0F400E803A7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7819274D2768D0F400E803A7 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		78192759276A093800E803A7 /* HorizontalFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalFeatureView.swift; sourceTree = "<group>"; };
-		78192761276A37F600E803A7 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		78192761276A37F600E803A7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		78A25BB3276A551F00A68339 /* UIColor+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,12 +74,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		78148918277075B300A7C763 /* Builder */ = {
+		78148918277075B300A7C763 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
 				78148919277075CC00A7C763 /* VCFactory.swift */,
 			);
-			path = Builder;
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		781489202770871E00A7C763 /* Task #1 ForteTests */ = {
@@ -123,7 +123,7 @@
 			children = (
 				781927422768CAAE00E803A7 /* Main */,
 				781927462768CD0900E803A7 /* Resource */,
-				78148918277075B300A7C763 /* Builder */,
+				78148918277075B300A7C763 /* Factory */,
 				781927442768CCE300E803A7 /* Models */,
 				781927432768CAB800E803A7 /* Controllers */,
 				781927452768CCF500E803A7 /* View */,
@@ -146,7 +146,7 @@
 		781927432768CAB800E803A7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7819274B2768D0BB00E803A7 /* MainVC */,
+				7819274B2768D0BB00E803A7 /* BaseVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,8 +163,8 @@
 		781927452768CCF500E803A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7819275F276A37C200E803A7 /* MainView */,
-				78192760276A37CD00E803A7 /* SecondView */,
+				7819275F276A37C200E803A7 /* MenuView */,
+				78192760276A37CD00E803A7 /* ProfileView */,
 				781927582769E04C00E803A7 /* BaseView */,
 			);
 			path = View;
@@ -178,12 +178,12 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		7819274B2768D0BB00E803A7 /* MainVC */ = {
+		7819274B2768D0BB00E803A7 /* BaseVC */ = {
 			isa = PBXGroup;
 			children = (
-				781927322768CA9C00E803A7 /* MenuVC.swift */,
+				781927322768CA9C00E803A7 /* BaseVC.swift */,
 			);
-			path = MainVC;
+			path = BaseVC;
 			sourceTree = "<group>";
 		};
 		781927582769E04C00E803A7 /* BaseView */ = {
@@ -194,20 +194,20 @@
 			path = BaseView;
 			sourceTree = "<group>";
 		};
-		7819275F276A37C200E803A7 /* MainView */ = {
+		7819275F276A37C200E803A7 /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
-				7819274D2768D0F400E803A7 /* MainView.swift */,
+				7819274D2768D0F400E803A7 /* MenuView.swift */,
 			);
-			path = MainView;
+			path = MenuView;
 			sourceTree = "<group>";
 		};
-		78192760276A37CD00E803A7 /* SecondView */ = {
+		78192760276A37CD00E803A7 /* ProfileView */ = {
 			isa = PBXGroup;
 			children = (
-				78192761276A37F600E803A7 /* SecondView.swift */,
+				78192761276A37F600E803A7 /* ProfileView.swift */,
 			);
-			path = SecondView;
+			path = ProfileView;
 			sourceTree = "<group>";
 		};
 		78A25BB2276A54F100A68339 /* Extension */ = {
@@ -327,16 +327,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				781927332768CA9C00E803A7 /* MenuVC.swift in Sources */,
+				781927332768CA9C00E803A7 /* BaseVC.swift in Sources */,
 				7814891A277075CC00A7C763 /* VCFactory.swift in Sources */,
 				78A25BB4276A551F00A68339 /* UIColor+Utils.swift in Sources */,
 				7819274A2768CD8B00E803A7 /* DataModel.swift in Sources */,
 				780BF1B7276BC04900D6BB5A /* UIStackView+Utils.swift in Sources */,
 				7814891727706FD900A7C763 /* MainModel.swift in Sources */,
-				78192762276A37F600E803A7 /* SecondView.swift in Sources */,
+				78192762276A37F600E803A7 /* ProfileView.swift in Sources */,
 				78148910276E4BD200A7C763 /* HorizontalFeatureView.swift in Sources */,
 				7819272F2768CA9C00E803A7 /* AppDelegate.swift in Sources */,
-				7819274E2768D0F400E803A7 /* MainView.swift in Sources */,
+				7819274E2768D0F400E803A7 /* MenuView.swift in Sources */,
 				781927312768CA9C00E803A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

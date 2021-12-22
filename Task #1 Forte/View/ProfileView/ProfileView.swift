@@ -1,5 +1,5 @@
 //
-//  SecondView.swift
+//  ProfileView.swift
 //  Task #1 Forte
 //
 //  Created by Andrey on 15.12.21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SecondView: UIView {
+final class ProfileView: UIView {
   
   weak var delegate: ViewDelegate?
   
@@ -79,11 +79,6 @@ final class SecondView: UIView {
     super.init(frame: frame)
     configureViews()
   }
-  
-//  convenience init(delegate: ViewDelegate) {
-//    self.init(frame: .zero)
-//    self.delegate = delegate
-//  }
   
   required init?(coder: NSCoder) {
     return nil
@@ -172,7 +167,7 @@ final class SecondView: UIView {
       infoLabel.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor, constant: -10)
     ])
   }
-
+  
   // MARK: - Actions
   @objc private func didTapNextButton() {
     delegate?.didTapButton()
@@ -180,7 +175,7 @@ final class SecondView: UIView {
 }
 
 //MARK: - Fillable
-extension SecondView: FillableProtocol {
+extension ProfileView: FillableProtocol {
   func fill(by model: DataModel) {
     titleLabel.text = model.titleLabel
     mainLabel.text = model.descriptionLabel
