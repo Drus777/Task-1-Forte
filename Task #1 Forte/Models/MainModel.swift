@@ -8,18 +8,18 @@
 import Foundation
 
 protocol MainModelProtocol: AnyObject {
-  init(model: DataModel)
-  func updateViewData(completion: (DataModel) -> Void)
+    init(model: DataModel)
+    func updateViewData(completion: (DataModel) -> Void)
 }
 
 final class MainModel: MainModelProtocol {
-  private var dataModel: DataModel
-
-  required init(model: DataModel) {
-    self.dataModel = model
-  }
-  
-  func updateViewData(completion: (DataModel) -> Void) {
-    completion(dataModel)
-  }
+    private var dataModel: DataModel
+    
+    required init(model: DataModel) {
+        self.dataModel = model
+    }
+    
+    func updateViewData(completion: (DataModel) -> Void) {
+        completion(dataModel)
+    }
 }
