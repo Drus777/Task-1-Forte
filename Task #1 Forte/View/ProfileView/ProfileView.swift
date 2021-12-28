@@ -25,7 +25,6 @@ final class ProfileView: UIView {
         imageView.image = image
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFill
-        imageView.isUserInteractionEnabled = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
