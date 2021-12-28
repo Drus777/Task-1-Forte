@@ -8,55 +8,54 @@
 import XCTest
 @testable import Task__1_Forte
 
-class MockView: MainViewProtocol {
-  func fillData() {
-    print("hello")
-  }
+class MockView: UIView, Fillable{
+    var titleLable: String?
+    func fill(by model: DataModel) {
+        self.titleLable = model.titleLabel
+    }
 }
 
 class MainModelTest: XCTestCase {
-  
-  var view: MockView!
-  var dataModel: DataModel!
-  var model: MainModel!
-  
-  override func setUpWithError() throws {
-    view = MockView()
-    dataModel = DataModel(
-      titleLabel: "Allow tracking",
-      mainLabel: nil,
-      infoLabel: "You can change this",
-      textContent: [
-        "Special offers",
-        "Advertisements",
-        "An improved"
-      ],
-      imageNames: [
-        "heart.fill",
-        "hand.point.up.braille.fill",
-        "wifi"
-      ])
-    model = MainModel(view: view, model: dataModel)
-  }
-  
-  override func tearDownWithError() throws {
-    view = nil
-    dataModel = nil
-    model = nil
-  }
-  
-  func testModuleIsNotNil()  {
-    XCTAssertNotNil(view, "view is not nil")
-    XCTAssertNotNil(dataModel, "view is not nil")
-    XCTAssertNotNil(model, "view is not nil")
-  }
-  
-  func testView() {
-    model.fillView()
-  }
-  
-  func testDataModel() {
-    XCTAssertEqual(model.dataModel.infoLabel, "You can change this")
-    XCTAssertEqual(model.dataModel.titleLabel, "Allow tracking")
-  }
+    
+    var view: MockView!
+    var dataModel: DataModel!
+    var model: BaseModel!
+    
+    override func setUpWithError() throws {
+        view = MockView()
+        dataModel = DataModel(
+            titleLabel: "Pal",
+            descriptionLabel: "Turning on location",
+            infoLabel: "You can change this later",
+            featureViewData:[
+                FeatureModel(textContent: "Special", imageNames: "heart.fill"),
+                FeatureModel(textContent: "Advertisements", imageNames: "hand.point.up.braille.fill"),
+                FeatureModel(textContent: "An improved", imageNames: "wifi")
+            ])
+        model = BaseModel(model: dataModel)
+    }
+    
+    override func tearDownWithError() throws {
+        view = nil
+        dataModel = nil
+        model = nil
+    }
+    
+    func testModuleIsNotNil()  {
+        XCTAssertNotNil(view, "view is not nil")
+        XCTAssertNotNil(dataModel, "dataModel is not nil")
+        XCTAssertNotNil(model, "model is not nil")
+    }
+    
+    func testView() {
+        model.updateViewData { data in
+            view.fill(by: data)
+        }
+        XCTAssertEqual(view.titleLable, "Pal")
+    }
+    
+    func testDataModel() {
+        XCTAssertEqual(dataModel.titleLabel, "Pal")
+        XCTAssertEqual(dataModel.infoLabel, "You can change this later")
+    }
 }
