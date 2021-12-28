@@ -13,9 +13,15 @@ final class HorizontalFeatureView: UIView {
     let label = UILabel()
     private let imageViewSize: CGFloat = 50
     
-    init() {
-        super.init(frame: .zero)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         configure()
+    }
+    
+    convenience init(image: UIImage, text: String) {
+        self.init(frame: .zero)
+        imageView.image = image
+        label.text = text
     }
     
     required init?(coder: NSCoder) {

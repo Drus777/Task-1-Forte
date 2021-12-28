@@ -182,7 +182,7 @@ extension ProfileView: Fillable {
         
         mainStackView.removeAllSubviews()
         for i in 0..<model.featureViewData.count {
-            let view = HorizontalFeatureView()
+            let view = HorizontalFeatureView(frame: .zero)
             view.imageView.clipsToBounds = true
             view.imageView.image = UIImage(systemName: model.featureViewData[i].imageNames)
             view.imageView.tintColor = .white
