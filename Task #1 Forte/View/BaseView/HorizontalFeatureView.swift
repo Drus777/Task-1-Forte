@@ -1,5 +1,5 @@
 //
-//  ImageViewWithLabel.swift
+//  HorizontalFeatureView.swift
 //  Task #1 Forte
 //
 //  Created by Andrey on 15.12.21.

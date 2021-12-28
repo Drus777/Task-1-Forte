@@ -1,5 +1,5 @@
 //
-//  MainModel.swift
+//  BaseModel.swift
 //  Task #1 Forte
 //
 //  Created by Andrey on 20.12.21.
