@@ -9,8 +9,8 @@ import UIKit
 
 class BaseVC: UIViewController {
     
-    private var model: MainModelProtocol?
-    private let currentView: FillableProtocol?
+    private var model: BaseModelProtocol?
+    private let currentView: Fillable?
     
     override func loadView() {
         view = currentView
@@ -21,7 +21,7 @@ class BaseVC: UIViewController {
         fillViewData()
     }
     
-    init(model: MainModelProtocol, view: FillableProtocol) {
+    init(model: BaseModelProtocol, view: Fillable) {
         self.model = model
         self.currentView = view
         super.init(nibName: nil, bundle: nil)
@@ -41,9 +41,9 @@ class BaseVC: UIViewController {
 
 extension BaseVC: ViewDelegate {
     func didTapButton() {
-        let advertistingVC = VCFactory.createAdvertistingVC()
-        let registrationVC = VCFactory.createRegistrationVC()
-        let profileVC = VCFactory.createProfileVC()
+        let advertistingVC = ViewControllersFactory.advertistingVC()
+        let registrationVC = ViewControllersFactory.registrationVC()
+        let profileVC = ViewControllersFactory.profileVC()
         
         switch navigationController?.viewControllers.count {
         case 1:

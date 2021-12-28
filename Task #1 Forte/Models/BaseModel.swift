@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol MainModelProtocol: AnyObject {
+protocol BaseModelProtocol: AnyObject {
     init(model: DataModel)
     func updateViewData(completion: (DataModel) -> Void)
 }
 
-final class MainModel: MainModelProtocol {
+final class BaseModel: BaseModelProtocol {
     private var dataModel: DataModel
     
     required init(model: DataModel) {

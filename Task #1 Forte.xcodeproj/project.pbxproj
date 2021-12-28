@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		780BF1B7276BC04900D6BB5A /* UIStackView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780BF1B6276BC04900D6BB5A /* UIStackView+Utils.swift */; };
 		78148910276E4BD200A7C763 /* HorizontalFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78192759276A093800E803A7 /* HorizontalFeatureView.swift */; };
-		7814891727706FD900A7C763 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814891627706FD900A7C763 /* MainModel.swift */; };
-		7814891A277075CC00A7C763 /* VCFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78148919277075CC00A7C763 /* VCFactory.swift */; };
+		7814891727706FD900A7C763 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814891627706FD900A7C763 /* BaseModel.swift */; };
+		7814891A277075CC00A7C763 /* ViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78148919277075CC00A7C763 /* ViewControllersFactory.swift */; };
 		781489222770871E00A7C763 /* Task__1_ForteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781489212770871E00A7C763 /* Task__1_ForteTests.swift */; };
 		7814892B2770881C00A7C763 /* MainModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814892A2770881C00A7C763 /* MainModelTest.swift */; };
 		7819272F2768CA9C00E803A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819272E2768CA9C00E803A7 /* AppDelegate.swift */; };
@@ -36,8 +36,8 @@
 
 /* Begin PBXFileReference section */
 		780BF1B6276BC04900D6BB5A /* UIStackView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Utils.swift"; sourceTree = "<group>"; };
-		7814891627706FD900A7C763 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
-		78148919277075CC00A7C763 /* VCFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFactory.swift; sourceTree = "<group>"; };
+		7814891627706FD900A7C763 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		78148919277075CC00A7C763 /* ViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersFactory.swift; sourceTree = "<group>"; };
 		7814891F2770871E00A7C763 /* Task #1 ForteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Task #1 ForteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		781489212770871E00A7C763 /* Task__1_ForteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task__1_ForteTests.swift; sourceTree = "<group>"; };
 		781489232770871E00A7C763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		78148918277075B300A7C763 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				78148919277075CC00A7C763 /* VCFactory.swift */,
+				78148919277075CC00A7C763 /* ViewControllersFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				781927492768CD8B00E803A7 /* DataModel.swift */,
-				7814891627706FD900A7C763 /* MainModel.swift */,
+				7814891627706FD900A7C763 /* BaseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,11 +328,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				781927332768CA9C00E803A7 /* BaseVC.swift in Sources */,
-				7814891A277075CC00A7C763 /* VCFactory.swift in Sources */,
+				7814891A277075CC00A7C763 /* ViewControllersFactory.swift in Sources */,
 				78A25BB4276A551F00A68339 /* UIColor+Utils.swift in Sources */,
 				7819274A2768CD8B00E803A7 /* DataModel.swift in Sources */,
 				780BF1B7276BC04900D6BB5A /* UIStackView+Utils.swift in Sources */,
-				7814891727706FD900A7C763 /* MainModel.swift in Sources */,
+				7814891727706FD900A7C763 /* BaseModel.swift in Sources */,
 				78192762276A37F600E803A7 /* ProfileView.swift in Sources */,
 				78148910276E4BD200A7C763 /* HorizontalFeatureView.swift in Sources */,
 				7819272F2768CA9C00E803A7 /* AppDelegate.swift in Sources */,

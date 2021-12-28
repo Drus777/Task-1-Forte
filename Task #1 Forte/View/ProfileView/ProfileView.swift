@@ -12,14 +12,14 @@ final class ProfileView: UIView {
     weak var delegate: ViewDelegate?
     
     // MARK: - UI
-    private lazy var headerImageView: UIImageView = {
+    private var headerImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "header"))
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         return imageView
     }()
     
-    private lazy var backgroundImageView: UIImageView = {
+    private var backgroundImageView: UIImageView = {
         guard let image = UIImage(named: "secondBackground") else { return UIImageView() }
         let imageView = UIImageView(frame: .zero)
         imageView.image = image
@@ -30,7 +30,7 @@ final class ProfileView: UIView {
         return imageView
     }()
     
-    private lazy var mainStackView: UIStackView = {
+    private var mainStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fill
@@ -39,7 +39,7 @@ final class ProfileView: UIView {
         return stackView
     }()
     
-    private lazy var titleLabel: UILabel = {
+    private var titleLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 36, weight: .bold)
         label.numberOfLines = .zero
@@ -47,7 +47,7 @@ final class ProfileView: UIView {
         return label
     }()
     
-    private lazy var mainLabel: UILabel = {
+    private var mainLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
         label.font = .systemFont(ofSize: 23, weight: .medium)
@@ -55,7 +55,7 @@ final class ProfileView: UIView {
         return label
     }()
     
-    private lazy var infoLabel: UILabel = {
+    private var infoLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 19, weight: .regular)
         label.textColor = .white
@@ -63,7 +63,7 @@ final class ProfileView: UIView {
         return label
     }()
     
-    private lazy var nextButton: UIButton = {
+    private var nextButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Next", for: .normal)
         button.setTitleColor(.init(rgb: 0x592972), for: .normal)
@@ -174,8 +174,8 @@ final class ProfileView: UIView {
     }
 }
 
-//MARK: - Fillable
-extension ProfileView: FillableProtocol {
+// MARK: - Fillable
+extension ProfileView: Fillable {
     func fill(by model: DataModel) {
         titleLabel.text = model.titleLabel
         mainLabel.text = model.descriptionLabel

@@ -8,7 +8,7 @@
 import XCTest
 @testable import Task__1_Forte
 
-class MockView: UIView, FillableProtocol{
+class MockView: UIView, Fillable{
     var titleLable: String?
     func fill(by model: DataModel) {
         self.titleLable = model.titleLabel
@@ -19,7 +19,7 @@ class MainModelTest: XCTestCase {
     
     var view: MockView!
     var dataModel: DataModel!
-    var model: MainModel!
+    var model: BaseModel!
     
     override func setUpWithError() throws {
         view = MockView()
@@ -32,7 +32,7 @@ class MainModelTest: XCTestCase {
                 FeatureModel(textContent: "Advertisements", imageNames: "hand.point.up.braille.fill"),
                 FeatureModel(textContent: "An improved", imageNames: "wifi")
             ])
-        model = MainModel(model: dataModel)
+        model = BaseModel(model: dataModel)
     }
     
     override func tearDownWithError() throws {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol FillableProtocol where Self: UIView {
+protocol Fillable where Self: UIView {
     func fill(by model: DataModel)
 }
 
@@ -20,14 +20,14 @@ final class MenuView: UIView {
     weak var delegate: ViewDelegate?
     
     // MARK: - UI
-    private lazy var backgroundImageView: UIImageView = {
+    private var backgroundImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "background"))
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         return imageView
     }()
     
-    private lazy var mainStackView: UIStackView = {
+    private var mainStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fill
@@ -35,7 +35,7 @@ final class MenuView: UIView {
         return stackView
     }()
     
-    private lazy var titleLabel: UILabel = {
+    private var titleLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 30, weight: .medium)
         label.numberOfLines = .zero
@@ -43,7 +43,7 @@ final class MenuView: UIView {
         return label
     }()
     
-    private lazy var infoLabel: UILabel = {
+    private var infoLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 21, weight: .medium)
         label.numberOfLines = .zero
@@ -51,7 +51,7 @@ final class MenuView: UIView {
         return label
     }()
     
-    private lazy var continueButton: UIButton = {
+    private var continueButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Continue", for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 20, weight: .medium)
@@ -141,8 +141,8 @@ final class MenuView: UIView {
     }
 }
 
-//MARK: - Fillable
-extension MenuView: FillableProtocol {
+// MARK: - Fillable
+extension MenuView: Fillable {
     func fill(by model: DataModel) {
         titleLabel.text = model.titleLabel
         infoLabel.text = model.infoLabel
@@ -150,13 +150,11 @@ extension MenuView: FillableProtocol {
         mainStackView.removeAllSubviews()
         for i in 0..<model.featureViewData.count {
             let view = HorizontalFeatureView()
-            view.iconView.backgroundColor = .white
-            view.iconView.layer.cornerRadius = view.iconViewSize / 2
-            
             view.imageView.clipsToBounds = true
             view.imageView.image = UIImage(systemName: model.featureViewData[i].imageNames)
             view.imageView.tintColor = .systemGreen
             view.imageView.contentMode = .scaleAspectFit
+            view.imageView.backgroundColor = .white
             
             view.label.text = model.featureViewData[i].textContent
             view.label.textColor = .white

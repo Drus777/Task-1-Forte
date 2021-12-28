@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ViewControllersFactory.swift
 //  Task #1 Forte
 //
 //  Created by Andrey on 20.12.21.
@@ -7,16 +7,9 @@
 
 import UIKit
 
-protocol Factory {
-    static func createMenuVC() -> UIViewController
-    static func createAdvertistingVC() -> UIViewController
-    static func createRegistrationVC() -> UIViewController
-    static func createProfileVC() -> UIViewController
-}
-
-final class VCFactory: Factory {
+struct ViewControllersFactory {
     
-    static func createMenuVC() -> UIViewController {
+    static func menuVC() -> UIViewController {
         let dataModel = DataModel(
             titleLabel: "Allow tracking on the next screen for:",
             descriptionLabel: nil,
@@ -27,13 +20,13 @@ final class VCFactory: Factory {
                 FeatureModel(textContent: "An improved personalized experience over time", imageNames: "wifi")
             ])
         let view = MenuView()
-        let model = MainModel(model: dataModel)
+        let model = BaseModel(model: dataModel)
         let menuVC = BaseVC(model: model, view: view)
         view.delegate = menuVC
         return menuVC
     }
     
-    static func createAdvertistingVC() -> UIViewController {
+    static func advertistingVC() -> UIViewController {
         let dataModel = DataModel(
             titleLabel: "Pal\nAbout",
             descriptionLabel: "Turning on location services allows us to provide features like:",
@@ -44,13 +37,13 @@ final class VCFactory: Factory {
                 FeatureModel(textContent: "Tagging and sharing your location", imageNames: "mappin")
             ])
         let view = ProfileView()
-        let model = MainModel(model: dataModel)
+        let model = BaseModel(model: dataModel)
         let advertistingVC = BaseVC(model: model, view: view)
         view.delegate = advertistingVC
         return advertistingVC
     }
     
-    static func createRegistrationVC() -> UIViewController {
+    static func registrationVC() -> UIViewController {
         let dataModel = DataModel(
             titleLabel: "Hello, allow tracking on the next screen for:",
             descriptionLabel: nil,
@@ -61,13 +54,13 @@ final class VCFactory: Factory {
                 FeatureModel(textContent: "Tagging and sharing your location", imageNames: "mappin")
             ])
         let view = MenuView()
-        let model = MainModel(model: dataModel)
+        let model = BaseModel(model: dataModel)
         let registrationVC = BaseVC(model: model, view: view)
         view.delegate = registrationVC
         return registrationVC
     }
     
-    static func createProfileVC() -> UIViewController {
+    static func profileVC() -> UIViewController {
         let dataModel = DataModel(
             titleLabel: "Pal",
             descriptionLabel: "Turning on location",
@@ -78,7 +71,7 @@ final class VCFactory: Factory {
                 FeatureModel(textContent: "An improved personalized experience over time", imageNames: "wifi")
             ])
         let view = ProfileView()
-        let model = MainModel(model: dataModel)
+        let model = BaseModel(model: dataModel)
         let profileVC = BaseVC(model: model, view: view)
         view.delegate = profileVC
         return profileVC
